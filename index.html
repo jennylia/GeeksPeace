@@ -46,11 +46,20 @@
                     <span class="filter-count count"></span> selected out of <span class="total-count count"></span> records.
                 </div>                   
             </div>
+            <div>
+                <a data-step="1" data-intro='Activity is an indication of service type'></a>
+                <a data-step="2" data-intro='Hello step one!'></a>
+                <a data-step="3" data-intro='Hello step one!'></a>
+                <a data-step="4" data-intro='Hello step one!'></a>
+
+            </div>
             <div class="row" id="charts">
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="viz" id="what"><p>Activity</p></div>
+                            <div class="viz" id="what" ><p>
+                                <a onclick="javascript:introJs().start();">Activity</a>
+                            </p></div>
                         </div> 
                         <div class="col-md-6">
                             <div class="viz" id="language"><p>Language</p></div>
