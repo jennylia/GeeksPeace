@@ -46,42 +46,40 @@
                     <span class="filter-count count"></span> selected out of <span class="total-count count"></span> records.
                 </div>                   
             </div>
-            <div>
-                <a data-step="1" data-intro='Activity is an indication of service type'></a>
-                <a data-step="2" data-intro='Hello step one!'></a>
-                <a data-step="3" data-intro='Hello step one!'></a>
-                <a data-step="4" data-intro='Hello step one!'></a>
 
-            </div>
+            <div><a onclick="javascript:introJs().start();">Quick Guide</a></div>
+
             <div class="row" id="charts">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div data-step="1" data-intro='Activity is an indication of service type' class="col-md-6">
                             <div class="viz" id="what" ><p>
-                                <a onclick="javascript:introJs().start();">Activity</a>
+                                Activity
                             </p></div>
                         </div> 
                         <div class="col-md-6">
-                            <div class="viz" id="language"><p>Language</p></div>
+                            <div data-step="2" data-intro='The primary language of service' class="viz" id="language">
+                                <p>Language</p></div>
                         </div>                        
                     </div>
                 </div>                
                 <div class="col-md-6">
+                    <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div data-step="3" data-intro='service country'  class="col-md-12">
                             <p id="wheretitle">Where</p>
                             <div class="viz" id="map"></div>
                         </div> 
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="viz" id="orgtype"><p>Organisation Type</p></div>
+                            <div data-step="4" data-intro='Who runs this organization?' class="viz" id="orgtype"><p>Organisation Type</p></div>
                         </div> 
                     </div>                    
                 </div>
             </div>  
             <div class="row">
-                <div class="col-md-12">
+                <div data-step="5" data-intro='The data of what you selected' class="col-md-12">
                     <h3>Data Table</h3>
                     <table class="table table-hover" id="data-table">
                       <thead>
